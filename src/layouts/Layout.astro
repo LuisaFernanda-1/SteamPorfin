@@ -45,6 +45,7 @@ const { title } = Astro.props;
 					src="https://shared.akamai.steamstatic.com/store_item_assets/steam/clusters/frontpage/84afb9edc1f6cf8b779de9de/webm_page_bg_spanish.webm?t=1727393025"
 				>
 				</video>
+				<!-- este es el menu chiquito -->
 				<div
 					class="absolute top-6 z-10 bg-[#0c426ed2] flex h-9 w-[65%] justify-between ml-[20%] items-center font-sans list-none px-2 font-medium text-white text-[14px]"
 				>
@@ -74,19 +75,294 @@ const { title } = Astro.props;
 				</div>
 			</div>
 		</div>
-		<div class="bg-[#1A2A3C]">
-			<div class="mx-16 items-center text-pretty">
-				<img
-					class="h-20"
-					src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
-				/>
-				<h1
-					class="text-cyan-800 hover:text-white font-sans list-none font-medium"
-				>
-					TARJETAS DE REGALO STEAM
-					<p>Regala diversión</p>
-				</h1>
+		<!-- esta seccion es la de la izquierda de la pagina  -->
+		<section>
+			<div class="bg-[rgb(26,42,60)] space-y-4 flex justify-between">
+				<div class="mx-16 items-center text-pretty">
+					<img
+						class="h-20"
+						src="https://store.akamai.steamstatic.com/public/images//gift/steamcards_promo_03.png?v=1"
+					/>
+					<h1
+						class="text-cyan-800 hover:text-white hover:cursor-pointer font-sans list-none font-medium"
+					>
+						TARJETAS DE REGALO STEAM
+						<p>Regala diversión</p>
+					</h1>
+					<ul class="my-4 text-blue-500">
+						RECOMENDADOS
+
+						<div class="">
+							<li><a href="#">Amigos </a></li>
+							<li><a href="#">Mentores</a></li>
+							<li><a href="#">Etiquetas </a></li>
+						</div>
+					</ul>
+				</div>
+
+				<section>
+					<div>
+						<h1 class="text-white">DESTACADO Y RECOMENDADOS</h1>
+						<div class="relative group rounded-lg">
+							<img
+								class="block group-hover:hidden h-[350px] w-[600px]"
+								src="https://media.contentapi.ea.com/content/dam/apex-legends/common/shockwave/apex-seasonspage-top-sectionbg-xl.jpg.adapt.crop191x100.1200w.jpg"
+							/>
+
+							<img
+								class="hidden group-hover:block h-[350px] w-[600px]"
+								src="https://www.gamerfocus.co/wp-content/uploads/2023/11/destiny-2-la-forma-final-fecha-nueva-aplazamiento-expansion-1.jpg"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="my-6 bg-slate-900">
+						<h1 class="text-xl font-bold mb-6 mx-6 text-white">
+							Apex Legend
+						</h1>
+						<div class="grid grid-cols-2 gap-3">
+							<div>
+								<img
+									class="w-[160px] h-[100px]"
+									src="https://images.nvidia.com/geforce-com/international/images/destiny-2/destiny-2-character-detail-distance-001-high-640px.jpg"
+								/>
+							</div>
+							<div>
+								<img
+									class="w-[200px] h-[100px]"
+									src="https://images.nvidia.com/geforce-com/international/images/destiny-2/destiny-2-character-detail-distance-001-high-640px.jpg"
+								/>
+							</div>
+							<div>
+								<img
+									class="w-[160px] h-[100px]"
+									src="https://images.nvidia.com/geforce-com/international/images/destiny-2/destiny-2-character-detail-distance-001-high-640px.jpg"
+								/>
+							</div>
+							<div>
+								<img
+									class="w-[200px] h-[100px]"
+									src="https://images.nvidia.com/geforce-com/international/images/destiny-2/destiny-2-character-detail-distance-001-high-640px.jpg"
+								/>
+							</div>
+						</div>
+						<h1 class="text-white text-xl py-2">Ya Dispoinible</h1>
+						<p class="text-white text-xs bg-slate-500 h-4 w-24">
+							Lo más vendido
+						</p>
+						<p class="text-white text-xs">Free to play</p>
+					</div>
+				</section>
 			</div>
-		</div>
+		</section>
+		<!-- cuatro tarjetas -->
+		<section>
+			<div class="bg-[#1b2838] p-8">
+				<h2 class="text-white text-lg font-bold mb-6">
+					OFERTAS ESPECIALES
+				</h2>
+
+				<div class="grid grid-cols-3 gap-4">
+					<!-- Para la Primera Tarjeta -->
+					<div
+						class="bg-[#2a475e] text-white rounded-lg overflow-hidden"
+					>
+						<div>
+							<img
+								class="w-[420px] h-[550px]"
+								src="https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__opengraph/img/d5aVUcak3R6QOHz5y-fvQdc8pwU=/fit-in/1200x630/filters:strip_icc()/pic4458123.jpg"
+							/>
+							<span
+								class="absolute top-2 left-2 bg-red-600 px-2 py-1 text-xs"
+								>DIRECTO</span
+							>
+						</div>
+						<div class="p-4">
+							<h3 class="font-bold text-lg">
+								OFERTA DE ENTRE SEMANA
+							</h3>
+							<p class="text-sm text-gray-300">
+								La oferta termina el 14 OCT a las 12:00.
+							</p>
+							<div class="flex justify-between items-center mt-4">
+								<span class="text-yellow-400 font-bold text-xl"
+									>-60%</span
+								>
+								<span class="line-through text-gray-400"
+									>COL$ 47.500</span
+								>
+								<span class="text-lg">COL$ 19.000</span>
+							</div>
+						</div>
+					</div>
+
+					<!--Para la tarjeta del medio -->
+					<div
+						class="bg-[#2a475e] text-white rounded-lg overflow-hidden"
+					>
+						<img
+							class="w-[420px] h-[550px]"
+							src="https://i.etsystatic.com/20321692/r/il/033236/2124819614/il_570xN.2124819614_43tf.jpg"
+							alt="HypeTrain"
+						/>
+						<div class="p-4">
+							<h3 class="font-bold text-lg">
+								OFERTAS DEL EDITOR
+							</h3>
+							<p class="text-sm text-gray-300">
+								La oferta termina el 21 OCT a las 12:00.
+							</p>
+							<div class="flex justify-between items-center mt-4">
+								<span class="text-yellow-400 font-bold text-xl"
+									>Hasta -90%</span
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- para la tarjeta doble -->
+
+					<div class="space-y-4">
+						<!-- primer tarjeta pequeña -->
+						<div
+							class="bg-[#2a475e] text-white rounded-lg overflow-hidden"
+						>
+							<img
+								src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/b/blue-fire-switch/hero"
+								alt="Blue Fire"
+							/>
+							<div class="p-4">
+								<h3 class="font-bold text-lg">
+									¡Oferta del día!
+								</h3>
+								<div
+									class="flex justify-between items-center mt-4"
+								>
+									<span
+										class="text-green-500 font-bold text-xl"
+										>-80%</span
+									>
+									<span class="line-through text-gray-400"
+										>COL$ 31.000</span
+									>
+									<span class="text-lg">COL$ 6.200</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Para la segunda tarjeta -->
+						<div
+							class="bg-[#2a475e] text-white rounded-lg overflow-hidden"
+						>
+							<div class="relative">
+								<img
+									src="https://i.ytimg.com/vi/BoD3grVYYM4/maxresdefault.jpg"
+									alt="Gatekeeper"
+								/>
+								<span
+									class="absolute top-2 left-2 bg-red-600 px-2 py-1 text-xs"
+									>DIRECTO</span
+								>
+							</div>
+							<div class="p-4">
+								<h3 class="font-bold text-lg">
+									¡Oferta del día!
+								</h3>
+								<div
+									class="flex justify-between items-center mt-4"
+								>
+									<span
+										class="text-green-500 font-bold text-xl"
+										>-20%</span
+									>
+									<span class="line-through text-gray-400"
+										>COL$ 37.500</span
+									>
+									<span class="text-lg">COL$ 30.000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="bg-[#1b2838] ">
+				<h1 class="text-white font-bold mx-8 space-y-14">
+					EXPLORAR POR CATEGORIA
+				</h1>
+				<div class="grid grid-cols-4 gap-4 h-[200px] w-[600px] items-center justify-center mx-[350px]">
+					<!-- primera tarjeta -->
+					<div
+						class="relative overflow-hidden  transform transition-transform hover:scale-105"
+					>
+						<img
+			
+							src="https://store.steampowered.com/categories/homepageimage/category/casual?cc=us&l=spanish
+"
+							alt="ROL"
+						/>
+						<div class="absolute bottom-4 left-4">
+							<span class="text-white font-bold text-xl">ROL</span
+							>
+						</div>
+					</div>
+
+					<!--Segunda Tarjeta-->
+					<div
+						class="relative overflow-hidden transform transition-transform hover:scale-105"
+					>
+						<img
+							
+							src="https://store.steampowered.com/categories/homepageimage/category/casual?cc=us&l=spanish
+"
+							alt="Supervivencia"
+						/>
+						<div class="absolute bottom-4 left-4">
+							<span class="text-white font-bold text-xl"
+								>SUPERVIVENCIA</span
+							>
+						</div>
+					</div>
+
+					<!-- Tercera tarjeta -->
+					<div
+						class="relative overflow-hidden  transform transition-transform hover:scale-105"
+					>
+						<img
+		
+							src="https://store.steampowered.com/categories/homepageimage/category/casual?cc=us&l=spanish
+"
+							alt="Estrategia"
+						/>
+						<div class="absolute bottom-4 left-4">
+							<span class="text-white font-bold text-xl"
+								>ESTRATEGIA</span
+							>
+						</div>
+					</div>
+
+					<!-- Cuarta tarjeta -->
+					<div
+						class="relative overflow-hidden rtransform transition-transform hover:scale-105"
+					>
+						<img
+							
+							src="https://store.steampowered.com/categories/homepageimage/category/casual?cc=us&l=spanish
+"
+							alt="Lucha"
+						/>
+						<div class="absolute bottom-4 left-4">
+							<span class="text-white font-bold text-xl"
+								>LUCHA</span
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
